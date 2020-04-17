@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="buttonClear" destination="zAz-Vi-gvX" id="ehY-cf-BQX"/>
+                <outlet property="buttonPlay" destination="sRN-Ky-Oof" id="uKM-UF-G2J"/>
+                <outlet property="buttonRecord" destination="qmg-5Z-4pc" id="OMG-Dp-bd4"/>
+                <outlet property="buttonStop" destination="6vO-JO-ZjI" id="FfY-hx-Pmh"/>
+                <outlet property="labelFileSize" destination="y16-JV-aeu" id="XHX-Rk-WgN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-Ky-Oof">
+                    <rect key="frame" x="115" y="582.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonPlay:" destination="-1" eventType="touchUpInside" id="l5X-z6-Mjk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-JO-ZjI">
+                    <rect key="frame" x="253" y="283.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonStop:" destination="-1" eventType="touchUpInside" id="PAJ-Vm-P3i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAz-Vi-gvX">
+                    <rect key="frame" x="253" y="582.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClear:" destination="-1" eventType="touchUpInside" id="oSO-0i-2og"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y16-JV-aeu">
+                    <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-5Z-4pc">
+                    <rect key="frame" x="115" y="283.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonRecord:" destination="-1" eventType="touchUpInside" id="mJD-h2-vHC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="6vO-JO-ZjI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="2/3" id="I8J-3D-KYX"/>
+                <constraint firstItem="sRN-Ky-Oof" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="2/3" id="IYi-08-bHX"/>
+                <constraint firstItem="y16-JV-aeu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OcM-6u-Nm3"/>
+                <constraint firstItem="qmg-5Z-4pc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="2/3" id="TRz-Wh-513"/>
+                <constraint firstItem="6vO-JO-ZjI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="4/3" id="TVP-7s-lGY"/>
+                <constraint firstItem="y16-JV-aeu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gIV-EW-ETi"/>
+                <constraint firstItem="zAz-Vi-gvX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="4/3" id="lHL-D9-kza"/>
+                <constraint firstItem="zAz-Vi-gvX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="4/3" id="t4C-c4-jep"/>
+                <constraint firstItem="qmg-5Z-4pc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="2/3" id="twk-1M-cXT"/>
+                <constraint firstItem="sRN-Ky-Oof" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="4/3" id="wzE-7l-77H"/>
+                <constraint firstItem="y16-JV-aeu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="znl-DK-RX8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="245" y="190"/>
+        </view>
+    </objects>
+</document>
